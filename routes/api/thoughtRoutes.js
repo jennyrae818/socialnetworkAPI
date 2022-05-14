@@ -1,3 +1,6 @@
+//TO DOS
+//replace course with THOUGHT
+
 const router = require('express').Router();
 const {
   getCourses,
@@ -5,7 +8,7 @@ const {
   createCourse,
   updateCourse,
   deleteCourse,
-} = require('../../controllers/courseController.js');
+} = require('../../controllers/thoughtController.js');
 
 // /api/courses
 router.route('/').get(getCourses).post(createCourse);

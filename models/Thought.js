@@ -1,3 +1,6 @@
+// TO DOs
+//change course to THOUGHT
+
 const { Schema, model } = require('mongoose');
 
 const courseSchema = new Schema(

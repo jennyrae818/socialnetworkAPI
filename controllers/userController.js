@@ -1,21 +1,26 @@
+
+// TO DOS
+// change student to USER(s) and course to THOUGHT
+
 const { Student, Course } = require('../models');
 
-// TODO: Create an aggregate function to get the number of students overall
+// Aggregate function to get the number of students overall
 const headCount = async () =>
   Student.aggregate()
-    // Your code here
+    .count('studentCount')
     .then((numberOfStudents) => numberOfStudents);
 
-// TODO: Create a function that executes the aggregate method on the Student model and will calculate the overall grade by using the $avg operator
+// Aggregate function for getting the overall grade using $avg
 const grade = async (studentId) =>
   Student.aggregate([
     {
       $unwind: '$assignments',
     },
     {
-      // Your code here
+      $group: { _id: studentId, overallGrade: { $avg: '$assignments.score' } },
     },
   ]);
+
 
 module.exports = {
   // Get all students

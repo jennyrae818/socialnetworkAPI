@@ -1,5 +1,8 @@
+//TO DOS
+// change student to USER 
+
 const { Schema, model } = require('mongoose');
-const assignmentSchema = require('./Assignment');
+const assignmentSchema = require('./Reaction');
 
 // Schema to create Student model
 const studentSchema = new Schema(

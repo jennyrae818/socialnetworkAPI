@@ -1,3 +1,5 @@
+//TO DOS
+// change course to THOUGHT and student to USER
 const { Course, Student } = require('../models');
 
 module.exports = {

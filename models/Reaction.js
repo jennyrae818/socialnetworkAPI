@@ -1,3 +1,7 @@
+
+// TO DOS
+// change assignment to REACTION 
+
 const { Schema, Types } = require('mongoose');
 
 const assignmentSchema = new Schema(
