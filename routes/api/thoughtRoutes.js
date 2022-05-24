@@ -1,23 +1,33 @@
 //TO DOS
-//replace course with THOUGHT
+//replace thought with THOUGHT
 
 const router = require('express').Router();
 const {
-  getCourses,
-  getSingleCourse,
-  createCourse,
-  updateCourse,
-  deleteCourse,
-} = require('../../controllers/thoughtController.js');
 
-// /api/courses
-router.route('/').get(getCourses).post(createCourse);
+    getAllThoughts,
+    getSingleThought,
+    createThought,
+    updateThought,
+    deleteThought,
+    createReaction,
+    deleteReaction
+  } = require('../../controllers/thoughtController');
 
-// /api/courses/:courseId
-router
-  .route('/:courseId')
-  .get(getSingleCourse)
-  .put(updateCourse)
-  .delete(deleteCourse);
+router.route('/')
+    .get(getAllThoughts)
+
+router.route('/:userId')
+    .post(createThought);
+
+router.route('/:thoughtId')
+    .get(getSingleThought)
+    .put(updateThought)
+    .delete(deleteThought);
+
+router.route('/:thoughtId/reactions')
+    .post(createReaction);
+
+router.route('/:thoughtId/reactions/:reactionId')
+    .delete(deleteReaction);
 
 module.exports = router;
