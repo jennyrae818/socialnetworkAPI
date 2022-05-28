@@ -1,5 +1,4 @@
-// TO DOs
-//change thought to THOUGHT
+
 
 const { Schema, model } = require('mongoose');
 const reactionSchema = require('./Reaction');

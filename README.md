@@ -34,41 +34,43 @@ You will be presented with options of what you would like to do? To select a cho
 <br>
 <br>
 <br>
-![screenshot](./public/assets/screenshot1.png)
+![screenshot](./public/images/1createuser.png)
 <br>
 <br>
 <br>
-You can view all departments, roles, and all employees
+
 <br>
 <br>
 <br>
-![screenshot](./public/assets/screenshot2.png)
+![screenshot](./public/images/2allusers.png)
 <br>
 <br>
 <br>
-You can add departments, roles, and employees
+
 <br>
 <br>
 <br>
-![screenshot](./public/assets/screenshot3.png)
+![screenshot](./public/images/3createthought.png)
 <br>
 <br>
 <br>
-You can then view your additions
+
 <br>
 <br>
 <br>
-![screenshot](./public/assets/screenshot4.png)
+![screenshot](./public/images/4createreaction.png)
 <br>
 
 
 
 ## Link to Github
-<>
+<https://github.com/jennyrae818/socialnetworkAPI>
 
 ## Link to video walk through
-<>
-<>
+<https://drive.google.com/file/d/1DWs2nz7kYdd2VJq99LFWsGTX1Sf1ejEt/view>
+
+<https://drive.google.com/file/d/1DWs2nz7kYdd2VJq99LFWsGTX1Sf1ejEt/view>
+
 
 ## Questions
 
